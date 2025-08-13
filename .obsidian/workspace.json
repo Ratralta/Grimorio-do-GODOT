@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Coisas sobre a engine.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Coisas sobre a engine"
             }
           }
         ],
@@ -194,18 +194,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9d2f2a6cfa391af1",
+  "active": "ec48fa35af98b861",
   "lastOpenFiles": [
+    "Coisas sobre a engine.md",
+    "Bases gerais godot.md",
     "README.md",
     "Conceitos Básicos da linguagem.md",
+    "Dicas da engine.md",
+    "Nodes Control.md",
     "Bases gerais c++++.md",
     "IMAGENS",
     "Nova pasta",
     "GRIMORIO.md",
-    "Dicas da engine.md",
-    "Nodes Control.md",
-    "Coisas sobre a engine.md",
-    "Bases gerais godot.md",
     "Conceitos básicos da engine.md",
     "Nodes godot.md",
     "Nodes Spatial.md"
