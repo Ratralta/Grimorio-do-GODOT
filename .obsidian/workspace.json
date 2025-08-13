@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Nodes godot.md",
+                "file": "Conceitos Básicos da linguagem.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nodes godot"
+              "title": "Conceitos Básicos da linguagem"
             }
           }
         ]
@@ -181,14 +181,17 @@
   },
   "active": "d4020915ac4f14b9",
   "lastOpenFiles": [
-    "Nodes Spatial.md",
-    "Nodes godot.md",
-    "Nodes Control.md",
+    "IMAGENS",
+    "Nova pasta",
+    "Bases gerais c++++.md",
     "GRIMORIO.md",
-    "Bases gerais godot.md",
     "Dicas da engine.md",
-    "Conceitos básicos da engine.md",
+    "Nodes Control.md",
+    "Conceitos Básicos da linguagem.md",
     "Coisas sobre a engine.md",
-    "Bases gerais c++++.md"
+    "Bases gerais godot.md",
+    "Conceitos básicos da engine.md",
+    "Nodes godot.md",
+    "Nodes Spatial.md"
   ]
 }
