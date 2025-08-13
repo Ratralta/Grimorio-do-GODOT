@@ -1,0 +1,1 @@
+"Shift + F", faz com que a câmera entre no modo primeira pessoa 

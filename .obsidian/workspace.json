@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TESTE.md",
+                "file": "Nodes godot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TESTE"
+              "title": "Nodes godot"
             }
           }
         ]
@@ -181,6 +181,14 @@
   },
   "active": "d4020915ac4f14b9",
   "lastOpenFiles": [
-    "TESTE.md"
+    "Nodes Spatial.md",
+    "Nodes godot.md",
+    "Nodes Control.md",
+    "GRIMORIO.md",
+    "Bases gerais godot.md",
+    "Dicas da engine.md",
+    "Conceitos básicos da engine.md",
+    "Coisas sobre a engine.md",
+    "Bases gerais c++++.md"
   ]
 }
