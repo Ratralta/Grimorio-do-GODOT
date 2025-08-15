@@ -194,17 +194,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9d2f2a6cfa391af1",
+  "active": "ec48fa35af98b861",
   "lastOpenFiles": [
-    "IMAGENS",
     "GRIMORIO.md",
-    "Bases gerais c++++.md",
     "C++++ integrado com Godot.md",
+    "Conceitos Básicos da linguagem.md",
     "Dicas da engine.md",
+    "IMAGENS",
+    "Bases gerais c++++.md",
     "Conceitos básicos da engine.md",
     "Bases gerais godot.md",
     "Nodes Control.md",
-    "Conceitos Básicos da linguagem.md",
     "README.md",
     "Coisas sobre a engine.md",
     "IMAGENS",

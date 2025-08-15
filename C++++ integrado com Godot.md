@@ -1,1 +1,1 @@
-[[]]
+Com "GD.funcao_qualquer", você consegue usar todas as funções do Godot, mesmo usando c#
