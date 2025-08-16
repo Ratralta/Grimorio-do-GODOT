@@ -12,7 +12,10 @@ EX:
 Coloque o tipo de dado da array antes de colocar seu nome.
 EX:
 > int[] array_de_pedras ;
-> string[] nome_das_pedras = new string[] = {"João", "Gustavo Lima"}
+> string[] nome_das_pedras = new string[] = {"João", "Gustavo Lima", "Rauã"};
+
+## Criando List : 
+ List<int> 
 
 # Funções : 
 Para criar funções, é preciso definir que tipo de dado ela vai retornar. (*Void* retorna nada)
