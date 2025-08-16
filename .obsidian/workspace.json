@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceitos Básicos da linguagem.md",
+                "file": "Funções do c++++.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Conceitos Básicos da linguagem"
+              "title": "Funções do c++++"
             }
           }
         ],
@@ -197,8 +197,9 @@
   "active": "ec48fa35af98b861",
   "lastOpenFiles": [
     "Bases gerais c++++.md",
-    "GRIMORIO.md",
+    "Funções do c++++.md",
     "Conceitos Básicos da linguagem.md",
+    "GRIMORIO.md",
     "Nodes Control.md",
     "Coisas sobre a engine.md",
     "C++++ integrado com Godot.md",

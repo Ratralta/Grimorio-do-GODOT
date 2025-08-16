@@ -40,6 +40,7 @@ EX:
 > void bixo_pule() {*codigo*} // não vai retornar nenhum valor
 > int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente** inteiro 
 
+# Class : 
 
 # Coisas : 
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
