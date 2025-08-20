@@ -40,9 +40,56 @@ EX:
 > void bixo_pule() {*codigo*} // não vai retornar nenhum valor
 > int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente** inteiro 
 
-# Class : 
+# Class e Objetos: 
+## Class
+*  Para criar uma class, é só criar, nada demais. 
+EX: 
+>Class Pessoa
+ {
+	string Nome = "Cauã Rocha Falcão";
+	int Idade = 176; 
+	public void acao_falar_nome() // pode ser acessada por um objeto baseado nele  
+	{
+	Console.WriteLine($"Meu nome é {nome}");
+	}
+ }
+ // Assim você criou um class.
 
+## Objeto 
+Para criar um objeto, você precisa de uma "class" para ele se basear, então colocando o nome do class, nome do objeto recebendo **new** class(), você cria um objeto.
+EX:
+>Class_name objeto_1 = new Class_name(); // OBJETO
+```
+class Pessoa
+{
+	string Nome = "Cauã Rocha Falcão";
+	int Idade = 176; 
+	public void acao_falar_nome() // pode ser acessada por um objeto baseado nele  
+	{
+	Console.WriteLine($"Meu nome é {Nome}");
+	}
+}
+
+class Program // COMEÇANDO O PROGRAMA
+{
+    static void Main() // COMEÇANDO O PROGRAMA
+    {
+        Pessoa pessoa_new = new Pessoa(); // OBJETO
+        pessoa_new.acao_falar_nome();
+    }
+}
+```
 # Coisas : 
+## Criando arquivo C++++
+Para criar um arquivo c#, você precisa ter abaixado:
+> .net framework.
+> extensão "C#" do Visual Studio Code.
+> extensão "C# Dev Kit" do Visual Studio Code.
+
+Com eles abaixados , vá no Cropto de Comando, e use o comando ==dotnet new console -n NomeDoFolder==, assim vai criar uma pasta aonde você pode mexer com o C#.
+
+## Sobre a visibilidade das variáveis 
+
+## Não sei aonde botar 
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
 *  Quando for criar uma variável, se você não definir sua visibilidade, ela naturalmente vai ser **private**
-* 

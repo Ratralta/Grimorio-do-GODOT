@@ -185,6 +185,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -197,20 +198,20 @@
   "active": "ec48fa35af98b861",
   "lastOpenFiles": [
     "Bases gerais c++++.md",
+    "GRIMORIO.md",
+    "Dicas da engine.md",
+    "README.md",
+    "Nodes Spatial.md",
     "Funções do c++++.md",
     "Conceitos Básicos da linguagem.md",
-    "GRIMORIO.md",
     "Nodes Control.md",
     "Coisas sobre a engine.md",
     "C++++ integrado com Godot.md",
-    "Dicas da engine.md",
     "IMAGENS",
     "Conceitos básicos da engine.md",
     "Bases gerais godot.md",
-    "README.md",
     "IMAGENS",
     "Nova pasta",
-    "Nodes godot.md",
-    "Nodes Spatial.md"
+    "Nodes godot.md"
   ]
 }
