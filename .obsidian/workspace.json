@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d4020915ac4f14b9",
-            "type": "leaf",
-            "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
-            }
-          },
-          {
             "id": "ec48fa35af98b861",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "Conceitos Básicos da linguagem"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,8 +182,8 @@
   },
   "active": "ec48fa35af98b861",
   "lastOpenFiles": [
-    "Funções do c++++.md",
     "Conceitos Básicos da linguagem.md",
+    "Funções do c++++.md",
     "Bases gerais c++++.md",
     "GRIMORIO.md",
     "Dicas da engine.md",
