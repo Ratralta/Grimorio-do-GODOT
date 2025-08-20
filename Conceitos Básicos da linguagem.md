@@ -42,7 +42,7 @@ EX:
 
 # Class e Objetos: 
 ## Class
-*  Para criar uma class, é só criar, nada demais. 
+Para criar uma class, é só criar, nada demais. 
 EX: 
 >Class Pessoa
  {
@@ -55,10 +55,12 @@ EX:
  }
  // Assim você criou um class.
 
+Algumas palavras chaves que você pode adicionar as suas classes para dar a elas algumas propriedades extras são:
+	* **Static :**  Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.    
 ## Objeto 
 Para criar um objeto, você precisa de uma "class" para ele se basear, então colocando o nome do class, nome do objeto recebendo **new** class(), você cria um objeto.
 EX:
->Class_name objeto_1 = new Class_name(); // OBJETO
+>Class_name objeto_1 = new Class_name(); // criou um objeto
 ```
 class Pessoa
 {
@@ -88,8 +90,19 @@ Para criar um arquivo c#, você precisa ter abaixado:
 
 Com eles abaixados , vá no Cropto de Comando, e use o comando ==dotnet new console -n NomeDoFolder==, assim vai criar uma pasta aonde você pode mexer com o C#.
 
+## Template de código C++++
+```
+class Program 
+{
+    static void Main() 
+    {
+	Console.Write("Hello World")
+    }
+}
+```
 ## Sobre a visibilidade das variáveis 
 
 ## Não sei aonde botar 
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
 *  Quando for criar uma variável, se você não definir sua visibilidade, ela naturalmente vai ser **private**
+* Assim como as bibliotecas do pyton, o C# também possui, só que são tratados como "Classes".
