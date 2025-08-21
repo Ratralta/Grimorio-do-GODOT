@@ -14,13 +14,14 @@ EX:
 > int[] array_de_pedras ;
 > string[] nome_das_pedras = new string[] = {"João", "Gustavo Lima", "Rauã"};
 
+"array_name.Lenght" , retorna tantos itens a **array** tem.
 ## Criando List : 
 Parecido com criar Array, só com uma sintaxe diferente 
 EX: 
 > List\<float\> lista_de_numeros_vazia;
 > List\<int\> lista_de_numeros_cheia = new List\<int\>() {5,13,89,55};
 
-
+"lista_name.Count" , retorna tantos itens a **lista** tem 
 # Lações de Repetições 
 ## Foreach :
 É tipo o for, só que o valor do *i* assume o valor da posição que ele está na coleção. (é tipo o for do pyton)
@@ -54,6 +55,35 @@ EX:
 	}
  }
  // Assim você criou um class.
+
+Você pode alguns parâmetros na hora de criar um objeto usando uma classe, para isso, crie um public, com o nome da classe com parênteses, e dentro do parênteses, especifique os valores que você quer pedir. (Não esqueça de colocar o tipo de variável)
+EX:
+```cs
+class Pessoa
+{
+	string Nome; // não possue valor 
+	
+	public Pessoa(string _nome) // constructor 
+	{
+	Nome = _nome;
+	}
+	
+	public void acao_falar_nome()
+	{
+	Console.WriteLine($"Meu nome é {Nome}");
+	}
+}
+
+class Program // COMEÇANDO O PROGRAMA
+{
+    static void Main() // COMEÇANDO O PROGRAMA
+    {
+        Pessoa pessoa_new = new Pessoa("Falcão Lima"); // OBJETO
+        pessoa_new.acao_falar_nome();
+    }
+}
+```
+
 
 Algumas palavras chaves que você pode adicionar as suas classes para dar a elas algumas propriedades extras são:
 	* **Static :**  Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.    
@@ -106,3 +136,4 @@ class Program
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
 *  Quando for criar uma variável, se você não definir sua visibilidade, ela naturalmente vai ser **private**
 * Assim como as bibliotecas do pyton, o C# também possui, só que são tratados como "Classes".
+
