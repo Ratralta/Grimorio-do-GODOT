@@ -39,8 +39,8 @@ EX:
 Para criar funções, é preciso definir que tipo de dado ela vai retornar, caso queira criar parâmetros, é preciso definir o tipo de dados deles . (*Void* retorna nada)
 EX: 
 > void bixo_pule() {*codigo*} // não vai retornar nenhum valor
-> int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente** inteiro 
-> float teste_de_lista(list\<float> \_lista) {*codigo*} // tem parâmetro uma lista do tipo float, retorna um float
+> int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente inteiro** 
+> float teste_de_lista(list\<float> \_lista) {*codigo*} // tem parâmetro uma lista do tipo float, **retorna um float**
 
 # Class e Objetos: 
 ## Class
