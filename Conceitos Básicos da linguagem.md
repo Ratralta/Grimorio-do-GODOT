@@ -36,10 +36,11 @@ EX:
 > for(int i=0 ; i< array_de_int.Lenght ; i++)
 
 # Funções : 
-Para criar funções, é preciso definir que tipo de dado ela vai retornar. (*Void* retorna nada)
+Para criar funções, é preciso definir que tipo de dado ela vai retornar, caso queira criar parâmetros, é preciso definir o tipo de dados deles . (*Void* retorna nada)
 EX: 
 > void bixo_pule() {*codigo*} // não vai retornar nenhum valor
 > int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente** inteiro 
+> float teste_de_lista(list\<float> \_lista) {*codigo*} // tem parâmetro uma lista do tipo float, retorna um float
 
 # Class e Objetos: 
 ## Class
@@ -126,13 +127,13 @@ class Program
 {
     static void Main() 
     {
-	Console.Write("Hello World")
+	Console.WriteLine("Hello World!");
     }
 }
 ```
 ## Sobre a visibilidade das variáveis 
 
-## Não sei aonde botar 
+## Conceitos Básicos 
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
 *  Quando for criar uma variável, se você não definir sua visibilidade, ela naturalmente vai ser **private**
 * Assim como as bibliotecas do pyton, o C# também possui, só que são tratados como "Classes".
