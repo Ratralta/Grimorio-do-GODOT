@@ -44,7 +44,7 @@ EX:
 
 # Class e Objetos: 
 ## Class
-Para criar uma class, é só criar, nada demais. 
+Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
 EX: 
 >Class Pessoa
  {
@@ -79,7 +79,7 @@ class Program // COMEÇANDO O PROGRAMA
 {
     static void Main() // COMEÇANDO O PROGRAMA
     {
-        Pessoa pessoa_new = new Pessoa("Falcão Lima"); // OBJETO
+        Pessoa pessoa_new = new Pessoa("Falcão Lima"); // OBJETO, que tem como parametro um CLASS
         pessoa_new.acao_falar_nome();
     }
 }
@@ -112,6 +112,8 @@ class Program // COMEÇANDO O PROGRAMA
     }
 }
 ```
+# Structs 
+
 # Coisas : 
 ## Criando arquivo C++++
 Para criar um arquivo c#, você precisa ter abaixado:
@@ -125,13 +127,41 @@ Com eles abaixados , vá no Cropto de Comando, e use o comando ==dotnet new cons
 ```
 class Program 
 {
-    static void Main() 
+    static void Main(string[] args) 
     {
 	Console.WriteLine("Hello World!");
     }
 }
 ```
 ## Sobre a visibilidade das variáveis 
+
+## Memoria das Coisas
+### Stack : 
+É um local de memoria onde o computador oferece uma quantia limitada de memoria, as coisas guardadas nele são guardadas diretamente. 
+As coisas são :
+- int.
+- bools.
+- floats.
+- chars.
+- structs.
+
+Quando você cria uma variável, ela é armazenada no stack.
+### Heap :
+É um local de memoria onde o computador oferece quanta memoria o "heap" precisar, ele guarda os dados dele como um "apartamento", cada andar tem sua "ID", aonde cada *coisa* é guardada.
+As coisas são : 
+* classes.
+* arrays.
+* lists.
+* coleções.
+* string? 
+
+Quando você cria um objeto duma Class, as informações deste objeto vão para um "andar" no "heap" , enquanto o objeto em si se torna uma "ID" para acessar seu "andar".
+- ID do objeto é guardado no "stack".
+- Informações do objeto é guardado em um "andar" no "heap".
+
+
+
+
 
 ## Conceitos Básicos 
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
