@@ -42,52 +42,8 @@ EX:
 > int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente inteiro** 
 > float teste_de_lista(list\<float> \_lista) {*codigo*} // tem parâmetro uma lista do tipo float, **retorna um float**
 
-# Class e Objetos: 
+# Class e Objetos : 
 ## Class
-Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
-EX: 
->Class Pessoa
- {
-	string Nome = "Cauã Rocha Falcão";
-	int Idade = 176; 
-	public void acao_falar_nome() // pode ser acessada por um objeto baseado nele  
-	{
-	Console.WriteLine($"Meu nome é {nome}");
-	}
- }
- // Assim você criou um class.
-
-Você pode alguns parâmetros na hora de criar um objeto usando uma classe, para isso, crie um public, com o nome da classe com parênteses, e dentro do parênteses, especifique os valores que você quer pedir. (Não esqueça de colocar o tipo de variável)
-EX:
-```cs
-class Pessoa
-{
-	string Nome; // não possue valor 
-	
-	public Pessoa(string _nome) // constructor 
-	{
-	Nome = _nome;
-	}
-	
-	public void acao_falar_nome()
-	{
-	Console.WriteLine($"Meu nome é {Nome}");
-	}
-}
-
-class Program // COMEÇANDO O PROGRAMA
-{
-    static void Main() // COMEÇANDO O PROGRAMA
-    {
-        Pessoa pessoa_new = new Pessoa("Falcão Lima"); // OBJETO, que tem como parametro um CLASS
-        pessoa_new.acao_falar_nome();
-    }
-}
-```
-
-
-Algumas palavras chaves que você pode adicionar as suas classes para dar a elas algumas propriedades extras são:
-	* **Static :**  Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.    
 ## Objeto 
 Para criar um objeto, você precisa de uma "class" para ele se basear, então colocando o nome do class, nome do objeto recebendo **new** class(), você cria um objeto.
 EX:
@@ -112,7 +68,101 @@ class Program // COMEÇANDO O PROGRAMA
     }
 }
 ```
-# Structs 
+
+Você também pode atribuir valores a um objeto quando for criar ele, caso já exista uma class pra ele se basear.
+EX: 
+```cs 
+class Galinhas
+{
+    public string nome {get;set;}
+    public int idade {get;set;}
+    public bool compravel {get;set;}
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Galinhas galinha_de_ouro = new Galinhas
+        {
+            nome = "Gustavo",
+            idade = 9,
+            compravel = true,
+        };
+        Console.WriteLine("Nome dessa galinha é " + galinha_de_ouro.nome);
+    }
+}
+```
+
+## Criando variáveis dentro de um class
+Quando for criar um variável para um class, é recomendado fazer o uso de uma "feature" do c#, o {get;set;}
+\--- **O que é {get;set?}**
+get e set permitem adicionar algumas "propriedades" na hora de definir um valor para uma variável de um class/stuct. **Recomenda-se usar isso mesmo que você não queira  nenhuma propriedade especial para sua variável.**
+
+EXEMPLO USANDO SEM DEFINIR NENHUMA PROPRIEDADE ESPECIAL: 
+```c# 
+class Pessoa
+{
+	string nome {get;set;} // mesma coisa que "string nome;"
+	float tamanho {get;set;} // mesma coisa que "float tamanho;"
+}
+
+
+
+class Program 
+{
+    static void Main(string[] args) 
+    {
+	Console.WriteLine("Hello World!");
+    }
+}
+```
+
+\--- **Usando get/set com propriedades**
+
+
+
+
+
+EXEMPLO USANDO DEFININDO UMA PROPRIEDADE ESPECIAL: 
+```cs
+class Galinhas
+{
+    public string nome { get; set;} // sem propriedade
+    private int _idade; // valor "cobaia" que será usado na variavel "idade"
+    public int idade
+    {
+        get { return _idade; } // mesma coisa que "int idade;"
+        set // adicionando uma "propriedade" na hora de "setar" um valor a esta variavel, essa "propriedade" será lida quando a variavel receber um valor(value)
+        {
+            if (value < 0)
+            {
+               Console.WriteLine("Não existe idade menor que zero");
+                _idade = 0;
+            }
+            else
+            {
+                Console.WriteLine("Idade ok");
+                _idade = value;
+            }
+        }
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Galinhas galinha = new Galinhas();
+        galinha.nome = "Felipe";
+        galinha.idade = -30;
+        Console.WriteLine("a idade dessa galinha é : " + galinha.idade);
+        // vai aparecer no console :
+        // > Não existe idade menor que zero
+        // > a idade dessa galinha é : 0
+    }
+}
+```
+# Structs : 
+
 
 # Coisas : 
 ## Criando arquivo C++++
@@ -205,4 +255,3 @@ EX:
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
 *  Quando for criar uma variável, se você não definir sua visibilidade, ela naturalmente vai ser **private**
 * Assim como as bibliotecas do pyton, o C# também possui, só que são tratados como "Classes".
-
