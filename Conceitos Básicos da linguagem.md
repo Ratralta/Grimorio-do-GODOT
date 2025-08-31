@@ -42,7 +42,7 @@ EX:
 > int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente inteiro** 
 > float teste_de_lista(list\<float> \_lista) {*codigo*} // tem parâmetro uma lista do tipo float, **retorna um float**
 
-# Class e Objetos : 
+# Class, Struct e Objetos : 
 ## Class
 Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
 EX:
@@ -52,9 +52,9 @@ EX:
 >  public void acao_falar_nome() // pode ser acessada por um objeto baseado nele  
 > } // Assim você criou um class.
 
-Você pode pedir alguns parâmetros na hora de criar um objeto usando uma classe, para isso, crie um public, com o nome da classe com parênteses, e dentro do parênteses, especifique os valores que você quer pedir. (Não esqueça de colocar o tipo de variável)
-EX:
-
+Você pode pedir alguns parâmetros na hora de criar um objeto usando um class/struct, **criando um constructor**, tem varias maneiras de criar um constructor, uma delas é : 
+Crie um public com o nome da classe com parênteses, e dentro do parênteses especifique os valores que você quer pedir. (Não esqueça de colocar o tipo de variável)
+EX_1:
 ```cs
 class Pessoa
 {
@@ -80,8 +80,54 @@ class Program // COMEÇANDO O PROGRAMA
 }
 ```
 
-Algumas palavras chaves que você pode adicionar as suas classes para dar a elas algumas propriedades extras são:
-* **Static :** Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo.
+Da pra também usar uma logica de "função", colocando os valores que você quer entre coxetes, e guardando eles dentro de uma variável public da class/struct. 
+EX_2 :  
+```cs
+class Pessoa(string _nome) // constructor 
+{
+	string Nome {get;set;} = _nome; // guardando os valores do parâmetro desse class
+	
+	public void acao_falar_nome() // função 
+	{
+	Console.WriteLine($"Meu nome é {Nome}");
+	}
+}
+class Program // COMEÇANDO O PROGRAMA
+{
+    static void Main() // COMEÇANDO O PROGRAMA
+    {
+        Pessoa pessoa_new = new Pessoa("Falcão Lima"); // OBJETO, que tem como parametro um CLASS
+        pessoa_new.acao_falar_nome();
+    }
+}
+```
+
+Você pode adicionar algumas palavras chaves a sua class, deixando ela com algumas propriedades especiais, alguma dessas palavras chaves são :
+* **Static :** Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
+EX Static: 
+```cs
+static class Falar
+{
+	static public void falar_com_raiva(string nome_da_pessoa)
+	{
+	Console.WriteLine("grrrrr to com raiva de " + nome_da_pessoa + ", grrrrrr");
+	}
+}
+
+class Program 
+{
+    static void Main(string[] args) 
+    {
+	Falar.falar_com_raiva("Warick");
+    }
+}
+// Conseguiu usar a função "falar_com_raiva" sem precisar criar um objeto e usar o objeto para rodar a função.
+// static --> propriedade 
+// public --> visibilidade 
+// void --> tido de dado que retorna (void = nenhum)
+```
+## Struct 
+Extremamente similar a class, o jeito que você cria um struct  e adiciona parâmetros é do mesmo de um class.
 ## Objeto 
 Para criar um objeto, você precisa de uma "class" para ele se basear, então colocando o nome do class, nome do objeto recebendo **new** class(), você cria um objeto.
 EX:
@@ -133,6 +179,7 @@ class Program
 
 ## Criando variáveis dentro de um class
 Quando você for criar variáveis dentro de um class, use as "propriedades" {get;set;}.
+==[LINK SOBRE get/set](https://www.w3schools.com/cs/cs_properties.php) ==
 
 \--- **O que é {get;set;}?** 
 get e set permitem adicionar algumas "propriedades" na hora de definir um valor para uma variável de um class/stuct. **Recomenda-se usar isso mesmo que você não queira  nenhuma propriedade especial para sua variável.**
@@ -197,19 +244,9 @@ class Program
     }
 }
 ```
-# Structs : 
-
 
 # Coisas : 
-## Criando arquivo C++++
-Para criar um arquivo c#, você precisa ter abaixado:
-> .net framework.
-> extensão "C#" do Visual Studio Code.
-> extensão "C# Dev Kit" do Visual Studio Code.
-
-Com eles abaixados , vá no Cropto de Comando, e use o comando ==dotnet new console -n NomeDoFolder==, assim vai criar uma pasta aonde você pode mexer com o C#.
-
-## Template de código C++++
+## TEMPLATE DE CÓDIGO C++++
 ```
 class Program 
 {
@@ -222,6 +259,7 @@ class Program
 ## Sobre a visibilidade das variáveis 
 
 ## Memoria das Coisas
+==[LINK SOBRE stack e heap](https://www.youtube.com/watch?v=95SkyJe3Fe0)==
 ### Stack : 
 É um local de memoria onde o computador oferece uma quantia limitada de memoria, as coisas guardadas nele são guardadas diretamente. 
 As coisas são :
@@ -279,15 +317,17 @@ SE VOCÊ FIZER :
 Na teoria era pra retornar 20 , mais na pratica retorna 21. POR QUE pes1 recebeu a "ID" de pes2, tendo acesso ao seu "andar" do "apartamento", então quando mexe no valor de pes1, mexe também no de pes2, alias ambos estão agora no mesmo "andar". 
 EX:
 ![](heap_explicacao_2.png)
-
-
-
-
-
-
-
-
 ## Conceitos Básicos 
+### Criando arquivo C++++
+Para criar um arquivo c#, você precisa ter abaixado:
+> .net framework.
+> extensão "C#" do Visual Studio Code.
+> extensão "C# Dev Kit" do Visual Studio Code.
+
+Com eles abaixados , vá no Cropto de Comando, e use o comando ==dotnet new console -n NomeDoFolder==, assim vai criar uma pasta aonde você pode mexer com o C#.
+
+### Dicas
+* Tem um site que emula c#, e nele tem umas features bem legais, o site é [SharpLab](https://sharplab.io/#v2:C4LgTgrgdgNAJiA1AHwPQCoCwAoABLgZQAsBDMABwBkSAjXYAewYBsBnXASylwCVpcAtgzgBTEDnz5ARAS4AbiWYQRAOgCSUVuREBjYAAoAlBMkz1mncGUAJESXJ6GNAFYWjeE7jNbdygsBLaANZ68ooibpK4MgACAEwArKFKAIwwcgpKsWmAZAQGuADCPKoAgrgAqgCyuABClADy+XW4dQByACIAorjFFXUEACo8pX2E/cX5ANK4XVYdxQAKOOioOHHJOKuxuNHJAOy4OADeOAAFuGc7AGzbACy4FSRcejsADADaALq4ZADmrHmnc64Y7YACQOwAnHoAEQ2ZjMBi4ADqDDAzDgAEJoQYANyAs4AXxwBKAA=)
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
 *  Quando for criar uma variável, se você não definir sua visibilidade, ela naturalmente vai ser **private**
 * Assim como as bibliotecas do pyton, o C# também possui, só que são tratados como "Classes".

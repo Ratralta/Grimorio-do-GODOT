@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 286.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,14 +182,15 @@
   },
   "active": "ec48fa35af98b861",
   "lastOpenFiles": [
-    "IMAGENS/heap_explicacao_2.png",
+    "().md",
     "Conceitos Básicos da linguagem.md",
+    "Bases gerais c++++.md",
+    "IMAGENS/heap_explicacao_2.png",
     "IMAGENS/heap_explicacao_1 - Copia.png",
     "IMAGENS/heap_explicacao_1.png",
     "IMAGENS/cobaia.png",
     "IMAGENS/iti malia.png",
     "Funções do c++++.md",
-    "Bases gerais c++++.md",
     "GRIMORIO.md",
     "README.md",
     "C++++ integrado com Godot.md",
