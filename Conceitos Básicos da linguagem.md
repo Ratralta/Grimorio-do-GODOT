@@ -44,6 +44,44 @@ EX:
 
 # Class e Objetos : 
 ## Class
+Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
+EX:
+> Class Pessoa {
+>  string Nome = "Cauã Rocha Falcão"; 
+>  int Idade = 176; 
+>  public void acao_falar_nome() // pode ser acessada por um objeto baseado nele  
+> } // Assim você criou um class.
+
+Você pode pedir alguns parâmetros na hora de criar um objeto usando uma classe, para isso, crie um public, com o nome da classe com parênteses, e dentro do parênteses, especifique os valores que você quer pedir. (Não esqueça de colocar o tipo de variável)
+EX:
+
+```cs
+class Pessoa
+{
+	string Nome; // não possue valor 
+	
+	public Pessoa(string _nome) // constructor 
+	{
+	Nome = _nome;
+	}
+	
+	public void acao_falar_nome()
+	{
+	Console.WriteLine($"Meu nome é {Nome}");
+	}
+}
+class Program // COMEÇANDO O PROGRAMA
+{
+    static void Main() // COMEÇANDO O PROGRAMA
+    {
+        Pessoa pessoa_new = new Pessoa("Falcão Lima"); // OBJETO, que tem como parametro um CLASS
+        pessoa_new.acao_falar_nome();
+    }
+}
+```
+
+Algumas palavras chaves que você pode adicionar as suas classes para dar a elas algumas propriedades extras são:
+* **Static :** Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo.
 ## Objeto 
 Para criar um objeto, você precisa de uma "class" para ele se basear, então colocando o nome do class, nome do objeto recebendo **new** class(), você cria um objeto.
 EX:
@@ -94,8 +132,9 @@ class Program
 ```
 
 ## Criando variáveis dentro de um class
-Quando for criar um variável para um class, é recomendado fazer o uso de uma "feature" do c#, o {get;set;}
-\--- **O que é {get;set?}**
+Quando você for criar variáveis dentro de um class, use as "propriedades" {get;set;}.
+
+\--- **O que é {get;set;}?** 
 get e set permitem adicionar algumas "propriedades" na hora de definir um valor para uma variável de um class/stuct. **Recomenda-se usar isso mesmo que você não queira  nenhuma propriedade especial para sua variável.**
 
 EXEMPLO USANDO SEM DEFINIR NENHUMA PROPRIEDADE ESPECIAL: 
@@ -105,8 +144,6 @@ class Pessoa
 	string nome {get;set;} // mesma coisa que "string nome;"
 	float tamanho {get;set;} // mesma coisa que "float tamanho;"
 }
-
-
 
 class Program 
 {
@@ -118,12 +155,11 @@ class Program
 ```
 
 \--- **Usando get/set com propriedades**
+get : Serve para pegar outra variável, e definir seu tipo(int float etc) igual ao da variável pega.  
 
+set : Adiciona uma propriedade que acontece quando a variável recebe um valor. Usando "value", você pega o valor que atribuído a variável 
 
-
-
-
-EXEMPLO USANDO DEFININDO UMA PROPRIEDADE ESPECIAL: 
+EXEMPLO DEFININDO UMA PROPRIEDADE ESPECIAL: 
 ```cs
 class Galinhas
 {
