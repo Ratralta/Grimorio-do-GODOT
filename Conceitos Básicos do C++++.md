@@ -4,10 +4,26 @@
 Para criar uma variável, é preciso definir seu tipo, o nome, E não obrigatoriamente, um valor e sua visibilidade (Normalmente ela vai ser privada).
 EX: 
 > int hp_do_bixo = 12;
-> float  speed_do_bixo = 3.6f;  ---- > *Talvez do "f" para definir que é um float*
+> float  speed_do_bixo = 3.6f;  ---- > *precisa do "f" no final*
 > bool bixo_vivo = true;
 
-### Tipos de Variáveis : (TÁ VAZIO)
+### Tipos de Variáveis : 
+São os tipos de valores que a variável pode receber, sendo eles :
+* **int** : Número inteiro.
+EX: 
+> int numero = 100;
+
+* **Float** : Números reais. (Precisam ter o "f" quando for definir seu valor)
+EX: 
+>float numero = 13.69f;
+
+* **String** : Texto sem propriedades matemáticas. 
+EX: 
+>string name = "Hog Ridder";
+
+* **Char** : Similar a string, porem suporta somente **1** único caractere (*usar aspas simples \[''] para definir seu valor*).
+EX: 
+>char  inicial_do_blud = 'n';
 ### Palavras chaves de variáveis : 
 Existem algumas palavras chaves que você pode adicionar a uma variável quando for cria-la, algumas delas são :
 * **CONST** : Define que sua variável possui um valor **imutável**, que não pode ser alterado. 
@@ -20,6 +36,26 @@ EX:
 const float gravidade = 9.8f;
 gravidade = 20.5f; // ESSA LINHA DA ERRO
 Console.Write("A força da gravidade do planeta é : " + gravidade + "m/s²");
+```
+
+
+### Mudando tipo das Variáveis :
+Através de uma variável, é possível **retornar** um valor com **um tipo diferente** do tipo original através da classe "**Convert**". Essa class guarda funções que mudam o tipo do retorno da variável, algumas dessas funções são : 
+
+* **Convert.ToInt16(variavel)** : Retorna o valor de "variavel" como um "int" de "16 bytes". 
+EX: 
+```c#
+float numero_real = 4.55f;
+int numero_int = Convert.ToInt16(numero_real); // retornou o valor de "numero_real" como um "int".
+Console.Write(numero_int);
+```
+
+* **Convert.ToString(variavel)** : Retorna o valor de "variavel" como uma "string". 
+EX: 
+```c#
+bool pedra_usavel = true;
+string pedra_usavel_string = Convert.ToString(pedra_usavel);
+Console.Write("Essa pedra ela é " + pedra_usavel_string);
 ```
 
 ## Criando Array : 
@@ -270,7 +306,7 @@ class Program
     }
 }
 ```
-## Sobre a visibilidade das variáveis 
+## Sobre a visibilidade das variáveis (NÃO TEM NADA)
 
 ## Memoria das Coisas
 ==[LINK SOBRE stack e heap](https://www.youtube.com/watch?v=95SkyJe3Fe0)==
@@ -345,3 +381,4 @@ Com eles abaixados , vá no Cropto de Comando, e use o comando ==dotnet new cons
 *  "Sou_arquivo.cs" , assim cria um arquivo C#.
 *  Quando for criar uma variável, se você não definir sua visibilidade, ela naturalmente vai ser **private**
 * Assim como as bibliotecas do pyton, o C# também possui, só que são tratados como "Classes".
+* Não é possível mudar o tipo de dado da variável, mais é possível **retornar** o valor dela em OUTRO tipo de dado, através do "Convert.ToString(variavel)".

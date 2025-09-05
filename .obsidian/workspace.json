@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceitos Básicos do C++++.md",
+                "file": "Funções do c++++.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Conceitos Básicos do C++++"
+              "title": "Funções do c++++"
             }
           }
         ]
@@ -180,6 +180,7 @@
   },
   "active": "b2e827397d9f11ea",
   "lastOpenFiles": [
+    "Conceitos Básicos do C++++.md",
     "Bases gerais c++++.md",
     "--GRIMORIO--.md",
     "README.md",
@@ -187,7 +188,6 @@
     "Conceitos básicos da engine (Godot).md",
     "Coisas sobre a engine (Godot).md",
     "Dicas da engine (Godot).md",
-    "Conceitos Básicos do C++++.md",
     "Bases gerais godot.md",
     "().md",
     "IMAGENS/heap_explicacao_2.png",
