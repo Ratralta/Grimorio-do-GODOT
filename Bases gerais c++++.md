@@ -1,3 +1,3 @@
-[[Conceitos Básicos da linguagem]] 
+[[Conceitos Básicos do C++++]] 
 [[Funções do c++++]]
 

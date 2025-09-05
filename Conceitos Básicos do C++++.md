@@ -1,5 +1,4 @@
 
-
 # Variáveis :
 ## Criando Variáveis :
 Para criar uma variável, é preciso definir seu tipo, o nome, E não obrigatoriamente, um valor e sua visibilidade (Normalmente ela vai ser privada).
@@ -7,6 +6,21 @@ EX:
 > int hp_do_bixo = 12;
 > float  speed_do_bixo = 3.6f;  ---- > *Talvez do "f" para definir que é um float*
 > bool bixo_vivo = true;
+
+### Tipos de Variáveis : (TÁ VAZIO)
+### Palavras chaves de variáveis : 
+Existem algumas palavras chaves que você pode adicionar a uma variável quando for cria-la, algumas delas são :
+* **CONST** : Define que sua variável possui um valor **imutável**, que não pode ser alterado. 
+>-- *Precisa ter algum valor definido quando criado*.
+>-- *Não aceita variáveis para definir seu valor.*
+>-- *Objetos não são capazes de retornar variáveis "Const".*
+
+EX: 
+```c#
+const float gravidade = 9.8f;
+gravidade = 20.5f; // ESSA LINHA DA ERRO
+Console.Write("A força da gravidade do planeta é : " + gravidade + "m/s²");
+```
 
 ## Criando Array : 
 Coloque o tipo de dado da array antes de colocar seu nome.
