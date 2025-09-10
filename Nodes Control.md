@@ -1,1 +1,0 @@
-Label : É uma área de texto que aparece na tela
