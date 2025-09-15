@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bases gerais godot.md",
+                "file": "C++++ integrado com Godot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bases gerais godot"
+              "title": "C++++ integrado com Godot"
             }
           }
         ]
@@ -180,26 +180,34 @@
   },
   "active": "b2e827397d9f11ea",
   "lastOpenFiles": [
-    "Explicações expecificas/Godot/Nodes/node_Sprite2D.md",
     "Bases gerais godot.md",
+    "Explicações expecificas/Godot/Conceitos/link_Nodes_godot.md",
+    "Bases gerais c++++.md",
+    "Conceitos Básicos do C++++.md",
+    "Explicações expecificas/CSS/Conceitos/link_Class_get_e_set_propriedades.md",
+    "--GRIMORIO--.md",
+    "Funções do c++++.md",
+    "Explicações expecificas/CSS/Conceitos/link_Class.md",
+    "Funções do godot.md",
+    "C++++ integrado com Godot.md",
+    "Explicações expecificas/Godot/Conceitos/link_Cenas_Godot.md",
+    "Nodes.md",
+    "link_Node.md",
+    "Explicações expecificas/Godot/Conceitos/link_arquivos_salvos.md",
+    "Explicações expecificas/CSS/Conceitos",
+    "Explicações expecificas/Godot/Nodes/node_Sprite2D.md",
     "Explicações expecificas/Godot/Nodes/node_StaticBody2D.md",
     "IMAGENS/inspetor_node_sprite2D.png",
     "IMAGENS/nodes_exemplo_personagem.png",
     "Explicações expecificas/Godot/Nodes/node_CollisionShape2D.md",
     "Explicações expecificas/Godot/Nodes/node_CharacterBody2D.md",
     "Explicações expecificas/Godot/Exemplos",
-    "--GRIMORIO--.md",
-    "Nodes godot.md",
     "Nodes 2D.md",
     "Nodes Spatial.md",
     "Explicações expecificas/Godot/Nodes/node_Label.md",
     "Nodes Control.md",
     "Explicações expecificas/Godot/Conceitos",
     "Explicações expecificas/Godot/Nodes",
-    "Bases gerais c++++.md",
-    "Funções do c++++.md",
-    "Conceitos Básicos do C++++.md",
-    "Explicações expecificas/Godot/Conceitos/link_arquivos_salvos.md",
     "Explicações expecificas/Godot",
     "Explicações expecificas/CSS",
     "Untitled",
@@ -211,14 +219,11 @@
     "IMAGENS/palco_exemplo.png",
     "README.md",
     "IMAGENS/cobaia.png",
-    "().md",
     "IMAGENS/heap_explicacao_2.png",
     "IMAGENS/heap_explicacao_1 - Copia.png",
     "IMAGENS/heap_explicacao_1.png",
     "IMAGENS/iti malia.png",
-    "C++++ integrado com Godot.md",
     "IMAGENS",
-    "IMAGENS",
-    "Nova pasta"
+    "IMAGENS"
   ]
 }

@@ -1,14 +1,16 @@
 
 # Variáveis :
-## Criando Variáveis :
+## Sobre Variáveis :
+### Criando variáveis :
 Para criar uma variável, é preciso definir seu tipo, o nome, E não obrigatoriamente, um valor e sua visibilidade (Normalmente ela vai ser privada).
 EX: 
 > int hp_do_bixo = 12;
 > float  speed_do_bixo = 3.6f;  ---- > *precisa do "f" no final*
 > bool bixo_vivo = true;
 
+Caso for criar variáveis em [Class](link_Class.md), é recomendado usar as "propriedades" [{get;set;}](link_Class_get_e_set_propriedades.md) quando for criar qualquer variável, mesmo que você não for fazer uso dessas propriedades .
 ### Tipos de Variáveis : 
-São os tipos de valores que a variável pode receber, sendo eles :
+**São os tipos de valores que a variável pode receber, sendo eles :**
 * **int** : Número inteiro.
 EX: 
 > int numero = 100;
@@ -39,6 +41,14 @@ Console.Write("A força da gravidade do planeta é : " + gravidade + "m/s²");
 ```
 
 
+### Pegando o tipo das variáveis : 
+Para pegar o tipo da variável , basta colocar a variável, ponto e a função "GetType()", assim retorna o tipo de valor dela. 
+EX : 
+```cs
+int variavel {get;set;} = 10;
+Console.WriteLine(variavel.GetType())
+```
+
 ### Mudando tipo das Variáveis :
 Através de uma variável, é possível **retornar** um valor com **um tipo diferente** do tipo original através da classe "**Convert**". Essa class guarda funções que mudam o tipo do retorno da variável, algumas dessas funções são : 
 
@@ -57,6 +67,7 @@ bool pedra_usavel = true;
 string pedra_usavel_string = Convert.ToString(pedra_usavel);
 Console.Write("Essa pedra ela é " + pedra_usavel_string);
 ```
+
 
 ## Criando Array : 
 Coloque o tipo de dado da array antes de colocar seu nome.
@@ -92,8 +103,11 @@ EX:
 > int amostrar_vida_bixo() {*codigo*} // o tipo de dado que ela pode retornar é **somente inteiro** 
 > float teste_de_lista(list\<float> \_lista) {*codigo*} // tem parâmetro uma lista do tipo float, **retorna um float**
 
+
+
 # Class, Struct e Objetos : 
 ## Class
+### Criando um Class
 Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
 EX:
 > Class Pessoa {
@@ -110,7 +124,7 @@ class Pessoa
 {
 	string Nome; // não possue valor 
 	
-	public Pessoa(string _nome) // constructor 
+	public Pessoa(string _nome) // constructor com visibilidade public
 	{
 	Nome = _nome;
 	}
@@ -152,85 +166,8 @@ class Program // COMEÇANDO O PROGRAMA
 }
 ```
 
-Você pode adicionar algumas palavras chaves a sua class, deixando ela com algumas propriedades especiais, alguma dessas palavras chaves são :
-* **Static :** Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
-EX Static: 
-```cs
-static class Falar
-{
-	static public void falar_com_raiva(string nome_da_pessoa)
-	{
-	Console.WriteLine("grrrrr to com raiva de " + nome_da_pessoa + ", grrrrrr");
-	}
-}
-
-class Program 
-{
-    static void Main(string[] args) 
-    {
-	Falar.falar_com_raiva("Warick");
-    }
-}
-// Conseguiu usar a função "falar_com_raiva" sem precisar criar um objeto e usar o objeto para rodar a função.
-// static --> propriedade 
-// public --> visibilidade 
-// void --> tido de dado que retorna (void = nenhum)
-```
-## Struct 
-Extremamente similar a class, o jeito que você cria um struct  e adiciona parâmetros é do mesmo de um class.
-## Objeto 
-Para criar um objeto, você precisa de uma "class" para ele se basear, então colocando o nome do class, nome do objeto recebendo **new** class(), você cria um objeto.
-EX:
->Class_name objeto_1 = new Class_name(); // criou um objeto
-```
-class Pessoa
-{
-	string Nome = "Cauã Rocha Falcão";
-	int Idade = 176; 
-	public void acao_falar_nome() // pode ser acessada por um objeto baseado nele  
-	{
-	Console.WriteLine($"Meu nome é {Nome}");
-	}
-}
-
-class Program // COMEÇANDO O PROGRAMA
-{
-    static void Main() // COMEÇANDO O PROGRAMA
-    {
-        Pessoa pessoa_new = new Pessoa(); // OBJETO
-        pessoa_new.acao_falar_nome();
-    }
-}
-```
-
-Você também pode atribuir valores a um objeto quando for criar ele, caso já exista uma class pra ele se basear.
-EX: 
-```cs 
-class Galinhas
-{
-    public string nome {get;set;}
-    public int idade {get;set;}
-    public bool compravel {get;set;}
-}
-class Program
-{
-    static void Main(string[] args)
-    {
-        Galinhas galinha_de_ouro = new Galinhas
-        {
-            nome = "Gustavo",
-            idade = 9,
-            compravel = true,
-        };
-        Console.WriteLine("Nome dessa galinha é " + galinha_de_ouro.nome);
-    }
-}
-```
-
-## Criando variáveis dentro de um class
-Quando você for criar variáveis dentro de um class, use as "propriedades" {get;set;}.
+### Propriedades das variáveis em um class (get E set) : 
 ==[LINK SOBRE get/set](https://www.w3schools.com/cs/cs_properties.php) ==
-
 \--- **O que é {get;set;}?** 
 get e set permitem adicionar algumas "propriedades" na hora de definir um valor para uma variável de um class/stuct. **Recomenda-se usar isso mesmo que você não queira  nenhuma propriedade especial para sua variável.**
 
@@ -294,6 +231,194 @@ class Program
     }
 }
 ```
+### Criando Classes derivadas de outras : 
+Você consegue criar sub classes, que são classes que herdam variáveis e métodos/funções DA **classe base**. 
+Para criar um sub class, coloque o nome da sub class, dois ponto (:) e a qual **class base** ela pertence. 
+EX: 
+```cs 
+class classe_base
+{
+    public string var_class_base { get; set; } = "CLASS BASE"; // variavel da class base
+    public void falar_oi() // função da class base
+    {
+        Console.Write("Oi");
+    }
+}
+class sub_class : classe_base // "sub_class" DERIVA de "classe_base"
+{
+    public void falar_bomdia()
+    {
+        falar_oi(); // função de sua class base "classe_base"
+        Console.WriteLine(", Bom dia!");
+    }
+}
+// "sub_class" DERIVA de "classe_base", sub_class tem acesso a "var_class_base" E "falar_oi()"
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        sub_class obj = new sub_class();
+        obj.falar_bomdia(); // RETORNA : Oi, Bom dia!
+    }
+}
+```
+
+Caso sua **classe base** tenha um "constructor", é OBRIGATÓRIO criar um constructor com a palavra chave "base()", para pegar os parâmetros da **classe base**. 
+EX: 
+```cs
+class class_base // classe base
+{
+    public int variavel { get; set; }
+    public class_base(int _variavel) // constructor public
+    {
+	variavel = _variavel;
+    }
+} 
+
+class sub_class : class_base // "sub_class" DERIVA de "class_base"
+{
+public char variavel_de_subclass {get;set;} // variavel que só existe no class  "sub_class"
+    public sub_class(int _variavel, char _variavel_de_subclass) : base(_variavel)
+	{
+	variavel_de_subclass = _variavel_de_subclass;
+	}
+	// criando constructor, POIS a class base "class_base" POSSUI UM CONSTRUCTOR, então a sub classe "sub_class", precisa também de um constructor.
+
+    // esse constructor tem a palavra chave "base()", ele é OBRIGATORIO caso sua "class base" TENHA um constructor.
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        class_base ex1 = new class_base(10); // objeto do class "class_base"
+        sub_class ex2 = new sub_class(1, 'z'); // objeto da class "sub_class", que é derivada de "class_base"
+        Console.WriteLine(ex1.variavel);
+        Console.WriteLine(ex2.variavel_de_subclass);
+    }
+}
+```
+
+Funções de **classes base** podem conter a palavra chave "virtual", ela faz com que **classes derivadas** possam reescrever as funções com "virtual", através da palavra-chave "override"
+EX:
+```cs
+class Pessoa
+{
+    public string nome { set; get; }
+    public int idade { set; get; }
+    public Pessoa(string _nome, int _idade) // constructor public
+    {
+        nome = _nome;
+        idade = _idade;
+    }
+    
+    public virtual void falar_bom_dia() // função com palavra chave "virtual", para que ela possa ser reescrita.
+    {
+        Console.WriteLine("Oi bom dia");
+    }
+}
+
+class Pessoa_dois : Pessoa
+{
+    public Pessoa_dois(string _nome, int _idade) : base(_nome, _idade) // pegando constructor da class "Pessoa"
+    { }
+  
+    public override void falar_bom_dia() // usando a palavra chave "override", para reescrever a função "falar_bom_dia()" da class base "Pessoa"
+    {
+        Console.WriteLine("Ola bom dia, meu nome é " + nome + ", e tenho " + idade + " anos de idade");
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Pessoa pes1 = new Pessoa("Didi", 67);
+        Pessoa_dois pes2 = new Pessoa_dois("Ronaldo", 43);
+        pes1.falar_bom_dia();
+        pes2.falar_bom_dia();
+    }
+}
+```
+
+### Palavras chaves de um Class
+Você pode adicionar algumas palavras chaves a sua class, deixando ela com algumas propriedades especiais, alguma dessas palavras chaves são :
+* **Static :** Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
+EX Static: 
+```cs
+static class Falar
+{
+	static public void falar_com_raiva(string nome_da_pessoa)
+	{
+	Console.WriteLine("grrrrr to com raiva de " + nome_da_pessoa + ", grrrrrr");
+	}
+}
+
+class Program 
+{
+    static void Main(string[] args) 
+    {
+	Falar.falar_com_raiva("Warick");
+    }
+}
+// Conseguiu usar a função "falar_com_raiva" sem precisar criar um objeto e usar o objeto para rodar a função.
+// static --> propriedade 
+// public --> visibilidade 
+// void --> tido de dado que retorna (void = nenhum)
+```
+* 
+## Struct 
+Extremamente similar a class, o jeito que você cria um struct  e adiciona parâmetros é do mesmo de um class.
+## Objeto 
+Para criar um objeto, você precisa de uma "class" para ele se basear, então colocando o nome do class, nome do objeto recebendo **new** class(), você cria um objeto.
+EX:
+>Class_name objeto_1 = new Class_name(); // criou um objeto
+```
+class Pessoa
+{
+	string Nome = "Cauã Rocha Falcão";
+	int Idade = 176; 
+	public void acao_falar_nome() // pode ser acessada por um objeto baseado nele  
+	{
+	Console.WriteLine($"Meu nome é {Nome}");
+	}
+}
+
+class Program // COMEÇANDO O PROGRAMA
+{
+    static void Main() // COMEÇANDO O PROGRAMA
+    {
+        Pessoa pessoa_new = new Pessoa(); // OBJETO
+        pessoa_new.acao_falar_nome();
+    }
+}
+```
+
+Você também pode atribuir valores a um objeto quando for criar ele, caso já exista uma class pra ele se basear.
+EX: 
+```cs 
+class Galinhas
+{
+    public string nome {get;set;}
+    public int idade {get;set;}
+    public bool compravel {get;set;}
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        Galinhas galinha_de_ouro = new Galinhas
+        {
+            nome = "Gustavo",
+            idade = 9,
+            compravel = true,
+        };
+        Console.WriteLine("Nome dessa galinha é " + galinha_de_ouro.nome);
+    }
+}
+```
+
 
 # Coisas : 
 ## TEMPLATE DE CÓDIGO C++++

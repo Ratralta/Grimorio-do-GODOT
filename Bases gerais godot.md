@@ -17,7 +17,9 @@ Nodes "CSG" criam formas geométricas 3D
 ### Cenas, Nodes e scripts 
 
 #### Cenas : 
-* As coisas do seu projetos ficam guardados dentro de **Cenas**, E toda cena possui um **Node** raiz.
+* As coisas do seu projetos ficam guardados dentro de **Cenas**, elas são salvos como arquivos que ficam no [gerencador de arquivos](link_arquivos_salvos.md). Toda cena possui um [Node](link_Nodes_godot.md) raiz.
+
+* E toda cena possui um **Node** raiz.
 #### Nodes : 
 
 **Nodes** são todos os componentes que representa seu jogo, eles podem ser o sprite de alguma coisa ATÉ a caixa de colisão de um inimigo, você pode adicionar **Scripts** nos nodes para eles passarem a ter códigos.

@@ -1,3 +1,2 @@
-[[Conceitos Básicos do C++++]] 
-[[Funções do c++++]]
-
+# [[Conceitos Básicos do C++++]] 
+# [[Funções do c++++]]

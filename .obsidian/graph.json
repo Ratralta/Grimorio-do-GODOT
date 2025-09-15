@@ -34,6 +34,13 @@
         "a": 1,
         "rgb": 3318482
       }
+    },
+    {
+      "query": "file: node",
+      "color": {
+        "a": 1,
+        "rgb": 786616
+      }
     }
   ],
   "collapse-display": true,
@@ -46,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0000000000000029,
+  "scale": 1.0000000000000033,
   "close": true
 }
