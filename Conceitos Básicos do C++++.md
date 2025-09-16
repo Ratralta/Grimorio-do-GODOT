@@ -2,13 +2,20 @@
 # Variáveis :
 ## Sobre Variáveis :
 ### Criando variáveis :
-Para criar uma variável, é preciso definir seu tipo, o nome, E não obrigatoriamente, um valor e sua visibilidade (Normalmente ela vai ser privada).
+* Para criar uma variável, é preciso definir seu tipo, o nome, E não obrigatoriamente, um valor e sua visibilidade (Normalmente ela vai ser privada).
 EX: 
 > int hp_do_bixo = 12;
 > float  speed_do_bixo = 3.6f;  ---- > *precisa do "f" no final*
 > bool bixo_vivo = true;
 
-Caso for criar variáveis em [Class](link_Class.md), é recomendado usar as "propriedades" [{get;set;}](link_Class_get_e_set_propriedades.md) quando for criar qualquer variável, mesmo que você não for fazer uso dessas propriedades .
+
+* Você pode usar "var", que faz com que automaticamente defina o tipo de variável baseado no valor recebido. 
+EX: 
+> var sou_numero = 30; ---- > "30" é inteiro, então "sou_numero" é Int.
+> var texto = "gugu dada"; ---- > "gugu dada" é string, então  "texto" é string.
+
+
+* Caso for criar variáveis em [Class](link_Class.md), é recomendado usar as "propriedades" [{get;set;}](link_Class_get_e_set_propriedades.md) quando for criar qualquer variável, mesmo que você não for fazer uso dessas propriedades.
 ### Tipos de Variáveis : 
 **São os tipos de valores que a variável pode receber, sendo eles :**
 * **int** : Número inteiro.
@@ -45,8 +52,8 @@ Console.Write("A força da gravidade do planeta é : " + gravidade + "m/s²");
 Para pegar o tipo da variável , basta colocar a variável, ponto e a função "GetType()", assim retorna o tipo de valor dela. 
 EX : 
 ```cs
-int variavel {get;set;} = 10;
-Console.WriteLine(variavel.GetType())
+int variavel = 10;
+Console.WriteLine("o tipo dessa variavel é " + variavel.GetType());
 ```
 
 ### Mudando tipo das Variáveis :
@@ -106,7 +113,7 @@ EX:
 
 
 # Class, Struct e Objetos : 
-## Class
+## Coisas sobre Class
 ### Criando um Class
 Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
 EX:
@@ -344,7 +351,7 @@ class Program
 
 ### Palavras chaves de um Class
 Você pode adicionar algumas palavras chaves a sua class, deixando ela com algumas propriedades especiais, alguma dessas palavras chaves são :
-* **Static :** Colocando isso na classe ou em suas variáveis, vai fazer com que você não precise criar um objeto para acessar seus métodos/atributos.Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
+* **Static :** Colocando isso na classe ou em suas variáveis, vai fazer com que essa seja **GLOBAL**, fazendo com que você não precise criar um objeto para acessar seus métodos/atributos E variáveis . Para criar uma class, coloque o primeira letra do nome da sua class em maiúsculo. 
 EX Static: 
 ```cs
 static class Falar
@@ -367,7 +374,33 @@ class Program
 // public --> visibilidade 
 // void --> tido de dado que retorna (void = nenhum)
 ```
-* 
+
+* **Partial**: Ela serve para dividir o que você vai escrever em um class/struct, podendo definir um  class em varias áreas diferentes E até mesmo em arquivos diferentes, é útil principalmente para organização. (Quando o programa rodar, o compilador vai compilar primeiro todas as class "partial" que existem, *juntando elas em uma class só*)
+EX Partial:
+```cs
+public partial class Pessoa // primeiro pedaço da class "Pessoa"
+{
+	public string nome = "Felipe Lá ele";
+	public int idade = 25;
+}
+
+public partial class Pessoa // segundo pedaco da class "Pessoa"
+{
+	public void falar_nome()
+	{
+	Console.WriteLine("Meu nome é " + nome);
+	} 
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Pessoa pessoa1 = new Pessoa(); // criando objeto class de "Pessoa"
+        pessoa1.falar_nome(); // usando função "falar_nome()" do objeto "pessoa1"
+    }
+}
+```
 ## Struct 
 Extremamente similar a class, o jeito que você cria um struct  e adiciona parâmetros é do mesmo de um class.
 ## Objeto 

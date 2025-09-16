@@ -1,4 +1,7 @@
 # Bibliotecas padrões :
+
+
+# Funções :
 ## Console ...
 * **Console.Write("texto") / Console.WriteLine("texto")** : Printa no console o que você escreveu.
 EX: 

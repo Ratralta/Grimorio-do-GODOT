@@ -13,3 +13,4 @@ Similar ao "void static Main(){}", que faz seu código ser rodado normalmente, a
 * **public override void \_Ready() {}** : Tudo que está dentro dele só vai ser lido quando a node especifico for adicionado na [Cena](link_Cenas_Godot).
 
 * **public override void \_Process(double delta) {}** : Tudo que está dentro dele vai ser lido ACADA frame que passa do jogo. ("delta é os frames que estão passando)
+
