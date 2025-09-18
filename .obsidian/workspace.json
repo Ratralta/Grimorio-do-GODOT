@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bases gerais godot.md",
+                "file": "Explicações_expecificas/Godot/Conceitos/link_Nodes_Inspetor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bases gerais godot"
+              "title": "link_Nodes_Inspetor"
             }
           }
         ]
@@ -180,9 +180,27 @@
   },
   "active": "b2e827397d9f11ea",
   "lastOpenFiles": [
-    "Explicações expecificas/Godot/Conceitos/link_Nodes_godot.md",
     "Bases gerais godot.md",
+    "Explicações_expecificas/CSS/Conceitos/link_Class_get_e_set_propriedades.md",
+    "Explicações_expecificas/CSS/Conceitos/link_Class.md",
+    "Funções do godot.md",
     "--GRIMORIO--.md",
+    "Explicações_expecificas/Godot/Nodes/node_StaticBody2D.md",
+    "Explicações_expecificas/Godot/Nodes/node_Sprite2D.md",
+    "Explicações_expecificas/Godot/Nodes/node_CollisionShape2D.md",
+    "Explicações_expecificas/Godot/Nodes/node_Label.md",
+    "Explicações_expecificas/Godot/Nodes/node_CharacterBody2D.md",
+    "Explicações_expecificas/Godot/Conceitos/link_Nodes_Inspetor.md",
+    "Explicações_expecificas/Godot/Conceitos/link_Cenas_Godot.md",
+    "Explicações_expecificas/Godot/Conceitos/link_Nodes_godot.md",
+    "Explicações_expecificas/Godot/Conceitos/link_arquivos_salvos.md",
+    "Explicações_expecificas/Godot/Nodes",
+    "Explicações_expecificas/Godot/Conceitos",
+    "Explicações_expecificas/CSS/Conceitos",
+    "Explicações_expecificas/Godot",
+    "Explicações_expecificas/CSS",
+    "Explicações_expecificas",
+    "Explicações expecificas/Godot/Conceitos/link_Nodes_godot.md",
     "Explicações expecificas/Godot/Conceitos/link_Cenas_Godot.md",
     "Explicações expecificas/Godot/Conceitos/link_Nodes_Inspetor.md",
     "IMAGENS/palco_exemplo.png",
@@ -195,34 +213,17 @@
     "Funções e Bibliotecas do c++++.md",
     "Explicações expecificas/CSS/Conceitos/link_Class_get_e_set_propriedades.md",
     "Conceitos básicos da engine (Godot).md",
-    "Funções do godot.md",
-    "Nodes.md",
-    "link_Node.md",
     "Explicações expecificas/CSS/Conceitos",
-    "Explicações expecificas/Godot/Nodes/node_Sprite2D.md",
-    "Explicações expecificas/Godot/Nodes/node_StaticBody2D.md",
     "IMAGENS/inspetor_node_sprite2D.png",
     "IMAGENS/nodes_exemplo_personagem.png",
-    "Explicações expecificas/Godot/Nodes/node_CollisionShape2D.md",
-    "Explicações expecificas/Godot/Nodes/node_CharacterBody2D.md",
     "Explicações expecificas/Godot/Exemplos",
-    "Nodes 2D.md",
-    "Nodes Spatial.md",
-    "Explicações expecificas/Godot/Nodes/node_Label.md",
-    "Nodes Control.md",
     "Explicações expecificas/Godot/Conceitos",
     "Explicações expecificas/Godot/Nodes",
-    "Explicações expecificas/Godot",
-    "Explicações expecificas/CSS",
-    "Untitled",
-    "Explicações expecificas",
     "IMAGENS/arquivos_do_projeto_exemplo.png",
     "IMAGENS/cobaia.png",
     "IMAGENS/heap_explicacao_2.png",
     "IMAGENS/heap_explicacao_1 - Copia.png",
     "IMAGENS/heap_explicacao_1.png",
-    "IMAGENS/iti malia.png",
-    "IMAGENS",
-    "IMAGENS"
+    "IMAGENS/iti malia.png"
   ]
 }
