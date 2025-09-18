@@ -21,10 +21,18 @@ Nodes "CSG" criam formas geométricas 3D
 
 * E toda cena possui um **Node** raiz.
 #### Nodes : 
+* **Nodes** são todos os componentes que representa seu jogo, eles podem ser o sprite de alguma coisa ATÉ a caixa de colisão de um inimigo. 
 
-**Nodes** são todos os componentes que representa seu jogo, eles podem ser o sprite de alguma coisa ATÉ a caixa de colisão de um inimigo, você pode adicionar **Scripts** nos nodes para eles passarem a ter códigos.
-Geralmente você vai ter que configurar os nodes no **Inspetor** para funcionarem do jeito que você quer, como por exemplo : 
--- Se você quiser colocar um sprite 2D, você precisa colocar o node [sprite 2D](node_Sprite2D), e também precisa definir a imagem que será usada como sprite no **Inspetor**.
+* Os nodes possuem :
+	* Nome.
+	* Propriedades (São ajustadas no [Inspetor](link_Nodes_Inspetor)).
+	* Podem conter funções.
+	* Podem ser Nodes filhos ou Nodes pais de outros Nodes.
+
+* Quando possui uma grande cadeia de nodes interligados uns aos outros, se chama de árvore de nodes (ou *tree*). 
+
+* Você pode adicionar **Scripts** nos nodes para eles passarem a ter códigos. Geralmente você vai ter que configurar os nodes no **Inspetor** para funcionarem do jeito que você quer, como por exemplo : 
+-- Se você quiser colocar um sprite 2D, você precisa colocar o node [sprite 2D](node_Sprite2D), e também precisa definir a imagem que será usada como sprite no **[Inspetor](link_Nodes_Inspetor)**.
 EX:
 ![](inspetor_node_sprite2D.png)
 
@@ -40,3 +48,4 @@ EX:
 
 # Coisas sobre a engine (Godot)
 Todo "node", pode ser editado no "Inspetor", no canto superior direito 
+

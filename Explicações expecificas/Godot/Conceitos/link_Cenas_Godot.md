@@ -1,1 +1,1 @@
-* As coisas do seu projetos ficam guardados dentro de **Cenas**, elas são salvos como arquivos que ficam no [gerencador de arquivos](link_arquivos_salvos.md). Toda cena possui um [Node](link_Nodes_godot.md) raiz.
+* Cenas **são um conjunto de nodes** (toda cena possui um [Node](link_Nodes_godot.md) raiz), as cenas são salvas como arquivos que ficam no [gerencador de arquivos](link_arquivos_salvos.md), cenas podem ser **reutilizadas ou instanciadas** em outras cenas.

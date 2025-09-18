@@ -41,6 +41,13 @@
         "a": 1,
         "rgb": 786616
       }
+    },
+    {
+      "query": "file: link",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
     }
   ],
   "collapse-display": true,
