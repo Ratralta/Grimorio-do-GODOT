@@ -25,7 +25,7 @@
       "query": "file: C++++",
       "color": {
         "a": 1,
-        "rgb": 6170589
+        "rgb": 2612522
       }
     },
     {
@@ -61,5 +61,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 1.0000000000000033,
-  "close": true
+  "close": false
 }

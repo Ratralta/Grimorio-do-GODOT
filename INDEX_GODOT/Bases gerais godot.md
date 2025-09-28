@@ -1,4 +1,34 @@
-# Conceito de Nodes :
+# Conceitos básicos da engine (Godot)
+## Interface do Godot :
+* A área de visualização do seu projeto se chama **Palco**. 
+EX: 
+![](hud_palco_exemplo.png)
+
+* Os arquivos do seu projeto (como scripts, cenas e ETC), ficaram guardados no [FilseSystem](link_arquivos_salvos.md).
+EX:
+![](hud_arquivos_do_projeto_exemplo.png)
+
+* Quando você clicar em um **node**, vai aparecer o [Inspetor de nodes](link_Nodes_Inspetor.md). 
+EX: 
+![](inspetor_node_sprite2D.png)
+
+* Você consegue ver a documentação de um node apertando em **doc** no **inpetor** do node. 
+EX: 
+![](hud_abrir_documentacao_dos_nodes.png)
+## Conceitos do godot : 
+### Outras coisas 
+Os projetos do godot podem ser divididos em três partes, **2D** ,**3D** e **SCRIPT**.
+
+Todo o código fica dentro de "cenas", que tem que ser salvas nos arquivos.
+
+Nodes "CSG" criam formas geométricas 3D
+### Cenas, Nodes e scripts 
+
+#### Cenas : 
+* As coisas do seu projetos ficam guardados dentro de **Cenas**, elas são salvos como arquivos que ficam no [gerencador de arquivos](link_arquivos_salvos.md). Toda cena possui um [Node](link_Nodes_godot.md) raiz.
+
+* E toda cena possui um **Node** raiz.
+#### Nodes : 
 * **Nodes** são todos os componentes que representa seu jogo, eles podem ser o sprite de alguma coisa ATÉ a caixa de colisão de um inimigo.
 * Os nodes possuem :
 	* Nome.
@@ -24,57 +54,15 @@ Um exemplo mais pratico, digamos que você quer criar um personagem, para isso, 
 EX: 
 ![](nodes_exemplo_personagem.png)
 
-# Sessões Globais : 
-## Node  : 
-* Não sei pra q serve 
-![](inspetor_node_Node.png)
-### Process : // INCOMPLETO
-* **Mode** --> É um atributo relacionado a como o node reage caso o jogo tenha sido pausado, existem 5 modos : 
-**Inherit** : Caso o jogo pause, o node para de funcionar. 
-**Process** : Caso o jogo pause, o node com isso definido continuará funcionando. 
-**Pausable** : Lorem ipsolon dolor.
-**When Pausable** : Lorem ipsolon dolor.
-**Always** : Lorem ipsolon dolor.
+#### Scripts : 
+* **Scripts** é aonde você vai colocar os códigos do seu jogo, eles são salvos em arquivos, ficando no [FileSystem](link_arquivos_salvos.md)
 
-* **Priority** --> 
-* **Physcis Priority** --> 
+# Dicas da engine (Godot)
+* Se você estiver em um **palco 3D** , se você apertar Shift + F", faz com que a câmera entre no modo primeira pessoa.
 
-### Editor Descripition :
-* É aonde coloca uma descrição de um node.
-## CanvasItem : 
-* É responsável por manipular a visibilidade do node. 
-![](inspetor_node_CanvasItem.png)
-### Visibility : 
-* **Visible \[ON/OFF]** --> Deixa o node visível ou não na [cena](link_Cenas_Godot.md). 
-* **Modulate** --> Aplica uma cor no node, essa cor é herdada nos **nodes filhos**
-* **Self Modulate** --> Aplica uma cor no próprio node, não herda nos **nodes filhos**
+* Você pode adicionar descrições ao node, através do inspetor. 
+EX: 
+![](inspetor_node_descrisoes.png)
+# Coisas sobre a engine (Godot)
+Todo "node", pode ser editado no "Inspetor", no canto superior direito 
 
-# Nodes Pais Supremos : 
-## Nodes Control
-==CONCEITO==: Tem como foco, coisas relacionadas a HUD do player
-
-==EXEMPLOS DE NODES CONTROL==: 
------- [Label](node_Label) : É uma área de texto que aparece na tela
-
-## Nodes Spatial
-==CONCEITO==: Tem como foco, nodes relacionados a espaço 3D, como criar cubos 
-
-==EXEMPLOS DE NODES SPATIAL==: 
------- Lorem ipsolon Dolor
-
-## Nodes 2D
-==CONCEITO==: Lorem ipsolon Dolor
-
-==EXEMPLOS DE NODES 2D==:  
------- Lorem Ipsolon Dolor 
-
-# Tipos de Nodes : 
-## Nodes Body : 
-==CONCEITO== : É 
-
-==DEPENDENCIAS==: Todos os nodes body PRECISAM de um node de colisão.
-
-==EXEMPLOS DE NODES BODY==: 
------- [CharacterBody2D](node_CharacterBody2D) 
-
------- [StaticBody2D](node_StaticBody2D) 
